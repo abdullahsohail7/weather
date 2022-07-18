@@ -1,13 +1,13 @@
 
 import "./App.css";
-import UilReact from "@iconscout/react-unicons/icons/uil-react";
+// import UilReact from "@iconscout/react-unicons/icons/uil-react";
 import TopButtons from "./components/TopButtons";
 import Inputs from "./components/Inputs";
-import TimeAndLocation from "./components/TimeandLocation";
+// import TimeAndLocation from "./components/TimeandLocation";
 import TimeandLocation from "./components/TimeandLocation";
 import TemperatureAndDetails from "./components/TemperatureAndDetails";
 import Forecast from "./components/Forecast";
-import getWeatherData from "./services/weatherService";
+// import getWeatherData from "./services/weatherService";
 import getFormattedWeatherData from "./services/weatherService";
 import { useEffect, useState } from "react";
 function App() {
@@ -19,7 +19,7 @@ const [weather, setWeather]= useState(null);
 
 useEffect(()=> {
 const fetchWeather= async () => {
-  await getFormattedWeatherData( {...query, units}). then(data => {
+await getFormattedWeatherData( {...query, units}). then(data => {
     setWeather(data);
   } );
   
