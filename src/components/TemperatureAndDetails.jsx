@@ -1,8 +1,8 @@
 import React from 'react';
 import { formatToLocalTime } from '../services/weatherService';
 import {
-    UilArrowUp,
-    UilArrowDown,
+    // UilArrowUp,
+    // UilArrowDown,
     UilTemperature,
     UilTear,
     UilWind,
@@ -19,7 +19,7 @@ function TemperatureAndDetails({weather :{details, icon, temp, temp_min, temp_ma
 </div>
 
 <div className="flex flex-row items-center justify-between text-white py-3">
-<img src={iconUrlFromCode(icon)} alt="" className='w-20 ' />
+<img src={iconUrlFromCode(icon)} alt="" className='w-20'/>
 <p className='text-5xl ml-7 text-white'> {`${temp.toFixed()}°`}</p>
 <div className='flex flex-col space-y-2'>
 

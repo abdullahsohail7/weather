@@ -1,4 +1,4 @@
-import { data } from "autoprefixer";
+// import { data } from "autoprefixer";
 import {DateTime} from "luxon";
 const API_KEY= "24e0b7f37fe7492debdd58acc35e1a48";
 const BASE_URL = "https://api.openweathermap.org/data/2.5"
