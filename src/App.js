@@ -16,9 +16,9 @@ const [weather, setWeather]= useState(null);
 
 useEffect(()=> {
 const fetchWeather= async () => {
-await getFormattedWeatherData( {...query, units}). then(data => {
+await getFormattedWeatherData( {...query, units}).then(data => {
     setWeather(data);
-  } );
+  });
   
   };
   fetchWeather();
